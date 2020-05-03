@@ -141,6 +141,9 @@ namespace MathQuiz
                 // by updating the Time Left label.
                 timeLeft = timeLeft - 1;
                 timeLabel.Text = timeLeft + " seconds";
+
+                if (timeLeft <= 5)
+                    timeLabel.BackColor = Color.Red;
             }
             else
             {
